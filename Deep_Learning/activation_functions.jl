@@ -1,4 +1,4 @@
-# Acti.Fuc in hidden layer
+#A cti.Fuc in hidden layer
 
 function step_function(x)
     if x<=0
@@ -8,9 +8,11 @@ function step_function(x)
     end
 end
 
+
 function sigmoid(x)
     return 1/(1+exp(-x))
 end
+
 
 function relu(x)
     if x > 0
@@ -20,11 +22,14 @@ function relu(x)
     end
 end
 
+
 # Acti.Fuc in output layer
+
 
 function identity_function(x)
     return x
 end
+
 
 function softmax(x)
     c=maximum(x)
