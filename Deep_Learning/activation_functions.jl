@@ -1,4 +1,4 @@
-#A cti.Fuc in hidden layer
+# Act.Fuc in hidden layer
 
 function step_function(x)
     if x<=0
@@ -23,7 +23,7 @@ function relu(x)
 end
 
 
-# Acti.Fuc in output layer
+# Act.Fuc in output layer
 
 
 function identity_function(x)
