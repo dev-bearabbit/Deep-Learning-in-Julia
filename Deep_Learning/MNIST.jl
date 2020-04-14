@@ -22,6 +22,7 @@ end
 
 # 데이터 전처리하기
 
-train_x = reshape(train_x, 60000, 784)
+train_x = reshape(train_x,784, 60000)
+train_x=train_x'
 t = making_one_hot_labels(train_y)
 typeof(t), size(t)
