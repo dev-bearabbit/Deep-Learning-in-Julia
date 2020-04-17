@@ -31,8 +31,13 @@ function identity_function(x)
 end
 
 
-function softmax(x)
-    c=maximum(x)
-    exp.(x.-c)/sum(exp.(x.-c))
+function softmax_single(a)
+    c = maximum(a)
+    exp.(a .- c) / sum(exp.(a .- c))
 end
 
+# for batch data
+function softmax(a)
+    temp = map(softmax_single, eachrow(a))
+    return(transpose(hcat(temp ...)))
+end
