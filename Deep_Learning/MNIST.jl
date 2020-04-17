@@ -32,3 +32,5 @@ test_x = Array{Float64}(test_x)
 test_x=test_x'
 test_y = making_one_hot_labels(test_y)
 typeof(test_y), size(test_y)
+
+# note. x 데이터는 기본 데이터 타입이 복잡하다. 배열로 바꿔주면 계산이 훨씬 빨라진다.
