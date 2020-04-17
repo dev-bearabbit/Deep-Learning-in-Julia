@@ -27,3 +27,8 @@ train_x = Array{Float64}(train_x)
 train_x=train_x'
 t = making_one_hot_labels(train_y)
 typeof(t), size(t)
+test_x = reshape(test_x,784, 10000)
+test_x = Array{Float64}(test_x)
+test_x=test_x'
+test_y = making_one_hot_labels(test_y)
+typeof(test_y), size(test_y)
