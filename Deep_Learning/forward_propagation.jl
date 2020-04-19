@@ -1,23 +1,5 @@
-1. MNIST 데이터 다운 및 전처리
 
-using MLDatasets
-train_x, train_y = MNIST.traindata()
-test_x,  test_y  = MNIST.testdata()
-
-
-test_x = reshape(test_x,784, 10000)
-test_x = Array{Float64}(test_x)
-test_x=test_x'
-
-train_x = reshape(train_x,784, 60000)
-train_x = Array{Float64}(train_x)
-train_x=train_x'
-
-# t 자료를 원핫 레이블로 변경
-t = making_one_hot_labels(train_y)
-typeof(t), size(t)
-
-2. 네트워크 및 초기 매개 변수 설정
+1. 네트워크 및 초기 매개 변수 설정
 
 """
 TwoLayerNet를 mutable struct로 만듭니다.
@@ -39,7 +21,7 @@ end
 
 TwoLayerNet = making_network(784, 50, 10)
 
-3. 순전파에 필요한 함수 정의
+2. 순전파에 필요한 함수 정의
 
 function predict(x)
     a1 = (x * TwoLayerNet.W1) .+ TwoLayerNet.b1
@@ -104,7 +86,7 @@ function evaluate(x, t)
     return (temp * 100)
 end
 
-4. 순전파에 필요한 변수 정의
+3. 순전파에 필요한 변수 정의
 
 train_size = size(train_x)[1]
 batch_size = 100
@@ -112,7 +94,7 @@ learning_rate = 0.1
 train_loss_list = Float64[]
 accuracy = Float64[]
 
-5. 순전파 알고리즘 코드
+4. 순전파 알고리즘 코드
 
 @time begin
     for i in 1:600
@@ -134,7 +116,7 @@ accuracy = Float64[]
     end
 end
 
-6. 손실 함수, 정확도 그래프 그리기
+5. 손실 함수, 정확도 그래프 그리기
 
 using Plots
 
