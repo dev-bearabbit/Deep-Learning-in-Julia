@@ -1,4 +1,4 @@
-1. 네트워크 및 초기 매개 변수 설정
+##### 네트워크 및 초기 매개 변수 설정 #####
 
 """
 TwoLayerNet를 mutable struct로 만듭니다.
@@ -20,7 +20,7 @@ end
 
 TwoLayerNet = making_network(784, 50, 10)
 
-2. 역전파 인스턴스 설정
+##### 역전파 인스턴스 설정 ##### 
 
 mutable struct dense_layer
     x
@@ -49,9 +49,9 @@ result = SoftmaxwithLoss(0,0)
 dense1 = dense_layer(0,0,0,0,0)
 dense2 = dense_layer(0,0,0,0,0)
 Sigmoid1 = Sigmoid(0)
-#Relu = ReLu(0)
+# Relu = ReLu(0)
 
-3. 역전파에 필요한 함수 정의
+##### 역전파에 필요한 함수 정의 #####
 
 function cross_entropy_error(y,t)
     delta = 1e-7
@@ -124,7 +124,7 @@ function relu_backward(Relu,dout)
     return dx
 end
 
-4. 역전파에 필요한 변수 정의
+##### 역전파에 필요한 변수 정의 #####
 
 train_loss_list = Float64[]
 accuracy = Float64[]
@@ -132,7 +132,7 @@ train_size = size(train_x)[1]
 batch_size = 100
 learning_rate = 0.1
 
-5. 역전파 알고리즘 코드
+##### 역전파 알고리즘 코드 ##### 
 
 @time begin
     for i in 1: 600
@@ -152,7 +152,7 @@ learning_rate = 0.1
         a1_back = sigmoid_backward(Sigmoid1, z2_back)
         z1_back = dense_layer_backward(dense1, a1_back)
 
-        #가중치 갱신
+        # 가중치 갱신
         TwoLayerNet.W1 -= (learning_rate * dense1.dw)
         TwoLayerNet.W2 -= (learning_rate * dense2.dw)
         TwoLayerNet.b1 -= (learning_rate * dense1.db)
@@ -166,7 +166,7 @@ learning_rate = 0.1
     end
 end
 
-6. 손실 함수, 정확도 그래프 그리기
+##### 손실 함수, 정확도 그래프 그리기 ##### 
 
 using Plots
 
