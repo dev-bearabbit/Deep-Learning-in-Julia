@@ -1,5 +1,5 @@
 
-1. 네트워크 및 초기 매개 변수 설정
+##### 네트워크 및 초기 매개 변수 설정 ##### 
 
 """
 TwoLayerNet를 mutable struct로 만듭니다.
@@ -21,7 +21,7 @@ end
 
 TwoLayerNet = making_network(784, 50, 10)
 
-2. 순전파에 필요한 함수 정의
+##### 순전파에 필요한 함수 정의 ##### 
 
 function predict(x)
     a1 = (x * TwoLayerNet.W1) .+ TwoLayerNet.b1
@@ -86,7 +86,7 @@ function evaluate(x, t)
     return (temp * 100)
 end
 
-3. 순전파에 필요한 변수 정의
+##### 순전파에 필요한 변수 정의 ##### 
 
 train_size = size(train_x)[1]
 batch_size = 100
@@ -94,7 +94,7 @@ learning_rate = 0.1
 train_loss_list = Float64[]
 accuracy = Float64[]
 
-4. 순전파 알고리즘 코드
+##### 순전파 알고리즘 코드 ##### 
 
 @time begin
     for i in 1:600
@@ -116,7 +116,7 @@ accuracy = Float64[]
     end
 end
 
-5. 손실 함수, 정확도 그래프 그리기
+##### 손실 함수, 정확도 그래프 그리기 ##### 
 
 using Plots
 
