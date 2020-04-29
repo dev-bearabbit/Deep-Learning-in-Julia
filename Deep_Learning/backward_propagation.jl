@@ -123,7 +123,7 @@ end
 
 function SGD(params,grads)
     for key in keys(params)
-        params[key] -= grads[key]
+        params[key] -= learning_rate * grads[key]
     end
     return params
 end
