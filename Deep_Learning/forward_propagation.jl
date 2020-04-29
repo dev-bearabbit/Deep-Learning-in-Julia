@@ -1,32 +1,25 @@
 
 ##### 네트워크 및 초기 매개 변수 설정 ##### 
 
-"""
-TwoLayerNet를 mutable struct로 만듭니다.
-"""
-mutable struct init_network
-    W1
-    b1
-    W2
-    b2
-end
+params = Dict()
+grads = Dict()
 
 function making_network(input_size, hidden_size, output_size, weight_init_std =0.01)
-    W1 = weight_init_std * randn(Float64, input_size, hidden_size)
-    b1 = zeros(Float32, 1, hidden_size)
-    W2 = weight_init_std * randn(Float64, hidden_size, output_size)
-    b2 = zeros(Float32, 1, output_size)
-    return(init_network(W1, b1, W2, b2))
+    params["W1"] = weight_init_std * randn(Float64, input_size, hidden_size)
+    params["b1"] = zeros(Float32, 1, hidden_size)
+    params["W2"] = weight_init_std * randn(Float64, hidden_size, output_size)
+    params["b2"] = zeros(Float32, 1, output_size)
+    return(params)
 end
 
-TwoLayerNet = making_network(784, 50, 10)
+making_network(784, 50, 10)
 
 ##### 순전파에 필요한 함수 정의 ##### 
 
 function predict(x)
-    a1 = (x * TwoLayerNet.W1) .+ TwoLayerNet.b1
+    a1 = (x * params["W1"]) .+ params["b1"]
     z1 = sigmoid.(a1)
-    a2 = (z1 * TwoLayerNet.W2) .+ TwoLayerNet.b2
+    a2 = (z1 * params["W2"]) .+ params["b2"]
     return softmax(a2)
 end
 
@@ -74,11 +67,11 @@ for i in (1:length(w))
 end
 
 function TwoLayerNet_numerical_gradient(f, x, t)
-    W1 = numerical_gradient(f, x, t,TwoLayerNet.W1)
-    W2 = numerical_gradient(f, x, t,TwoLayerNet.W2)
-    b1 = numerical_gradient(f, x, t,TwoLayerNet.b1)
-    b2 = numerical_gradient(f, x, t,TwoLayerNet.b2)
-    return(init_network(W1, b1, W2, b2))
+    grads["W1"] = numerical_gradient(f, x, t,params["W1"])
+    grads["W2"] = numerical_gradient(f, x, t,params["W2"])
+    grads["b1"] = numerical_gradient(f, x, t,params["b1"])
+    grads["b2"] = numerical_gradient(f, x, t,params["b2"])
+    return(grads)
 end
 
 function evaluate(x, t)
@@ -93,21 +86,22 @@ batch_size = 100
 learning_rate = 0.1
 train_loss_list = Float64[]
 accuracy = Float64[]
+iters_num = 600
 
 ##### 순전파 알고리즘 코드 ##### 
 
 @time begin
-    for i in 1:600
+    for i in 1:iters_num
         batch_mask = rand(1:train_size, 100)
         x_batch = train_x[batch_mask, :]
         t_batch = t[batch_mask, :]
-        grad = TwoLayerNet_numerical_gradient(loss, x_batch, t_batch)
-    
-        TwoLayerNet.W1 -= (learning_rate * grad.W1)
-        TwoLayerNet.W2 -= (learning_rate * grad.W2)
-        TwoLayerNet.b1 -= (learning_rate * grad.b1)
-        TwoLayerNet.b2 -= (learning_rate * grad.b2)
-    
+        
+        # 편미분값 구하기
+        TwoLayerNet_numerical_gradient(loss, x_batch, t_batch)
+
+        # 확률적 경사하강법
+        SGD(params, grads)
+
         temp_loss = loss(x_batch, t_batch)
         print("NO.$i: ")
         println(temp_loss)
