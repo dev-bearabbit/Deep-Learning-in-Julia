@@ -79,6 +79,13 @@ function evaluate(x, t)
     return (temp * 100)
 end
 
+function SGD(params,grads)
+    for key in keys(params)
+        params[key] -= learning_rate * grads[key]
+    end
+    return params
+end
+
 ##### 순전파에 필요한 변수 정의 ##### 
 
 train_size = size(train_x)[1]
