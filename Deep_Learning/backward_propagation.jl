@@ -1,8 +1,5 @@
 ##### 네트워크 및 초기 매개 변수 설정 #####
 
-"""
-TwoLayerNet를 mutable struct로 만듭니다.
-"""
 params = Dict()
 grads = Dict()
 
@@ -119,6 +116,11 @@ end
 function relu_backward(Relu,dout)
     dx = dout.* Relu.mask
     return dx
+end
+
+function evaluate(test_x,test_y)
+    temp = (sum((argmax.(eachrow(predict(test_x))).-1) .== test_y)/size(test_x)[1])
+    return (temp * 100)
 end
 
 function SGD(params,grads)
