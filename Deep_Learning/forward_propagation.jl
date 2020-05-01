@@ -74,7 +74,7 @@ function TwoLayerNet_numerical_gradient(f, x, t)
     return(grads)
 end
 
-function evaluate(x, t)
+function evaluate(test_x,test_y)
     temp = (sum((argmax.(eachrow(predict(test_x))).-1) .== test_y)/size(test_x)[1])
     return (temp * 100)
 end
