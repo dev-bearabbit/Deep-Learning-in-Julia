@@ -15,11 +15,7 @@ end
 
 
 function relu(x)
-    if x > 0
-        return x
-    else
-        return 0
-    end
+    return max(0,x)
 end
 
 
