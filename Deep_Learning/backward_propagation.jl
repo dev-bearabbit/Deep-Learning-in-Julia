@@ -57,6 +57,10 @@ function sigmoid(x)
     return 1/(1+exp(-x))
 end
 
+function relu(x)
+    return max(0,x)
+end
+
 function softmax_single(a)
     c = maximum(a)
     exp.(a .- c) / sum(exp.(a .- c))
