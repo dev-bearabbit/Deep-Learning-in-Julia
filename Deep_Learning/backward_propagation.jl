@@ -151,7 +151,7 @@ iters_num = 600
         x_batch = train_x[batch_mask, :]
         t_batch = t[batch_mask, :]
         
-        # 순전파
+        # 신경망 계산
         z1 = dense_layer_forward(dense1,x_batch,params["W1"],params["b1"])
         a1 = sigmoid_forward(Sigmoid1,z1)
         z2 = dense_layer_forward(dense2,a1,params["W2"],params["b2"])
