@@ -67,3 +67,13 @@ end
 # 사용법
 
 making_network(W, b, 784, hidden_size, 10, "He")
+
+# 일반화된 순전파 미분 함수 코드
+
+function numerical_gradient_forward(f, x, t)
+    for i in (1:length(W))
+        grads[W[i]]= numerical_gradient(f, x, t,params[W[i]])
+        grads[b[i]] = numerical_gradient(f, x, t,params[b[i]])
+    end
+    return(grads)
+end
