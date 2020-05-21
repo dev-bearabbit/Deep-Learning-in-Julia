@@ -1,6 +1,5 @@
 # 신경망 층에 따른 가중치와 편향 설정
 
-params=Dict()
 W = ["W1", "W2", "W3"]
 b = ["b1", "b2", "b3"]
 hidden_size = [50, 100]
@@ -16,6 +15,8 @@ weight_init: 가중치 초기값 설정, 3개("std","Xavier","He" 중 하나 선
 ```
 
 function making_network(W, b, input_size, hidden_size, output_size, weight_init)
+    
+    params = Dict()
     
     if weight_init == "std"
         for i in (1:length(W))
@@ -62,11 +63,12 @@ function making_network(W, b, input_size, hidden_size, output_size, weight_init)
         end
         return(params)
     end
+    return(params)
 end
 
 # 사용법
 
-making_network(W, b, 784, hidden_size, 10, "He")
+params = making_network(W, b, 784, hidden_size, 10, "He")
 
 # 일반화된 순전파 미분 함수 코드
 
