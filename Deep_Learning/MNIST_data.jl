@@ -1,5 +1,6 @@
 # MNIST 패키지에서 데이터 가져오기
 
+using Pkg
 Pkg.add("MNIST")
 using MLDatasets
 train_x, train_y = MNIST.traindata()
