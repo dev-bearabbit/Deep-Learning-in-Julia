@@ -19,25 +19,13 @@ function cross_entropy_error(y,t)
 end
 
 function loss_CNN_batch(x, t)
-    y = predict_simplenet(x)
+    y = predict(x)
     return cross_entropy_error(y, t)
 end
 
 function evaluate_CNN_batch(x, y)
-    temp = sum(((argmax.(eachrow(predict_simplenet(x)))).-1) .== y)/ size(x)[4]
+    temp = sum(((argmax.(eachrow(predict(x)))).-1) .== y)/ size(x)[4]
     return (temp * 100)
-end
-
-function  predict_simplenet(input)
-    
-    pconv_1 = convolution2D_forward(pre_dense,input, params["W1"], params["b1"],1,0)
-    pconv_Re = relu.(pconv_1)
-    ppool_1 = Maxpooling_forward(pre_pool,pconv_Re, 2, 2, 2, 0)
-    flatten_1 = flatten_forward_batch(pre_flatten,ppool_1)
-    dense_1 = (flatten_1 * params["W2"]) .+ params["b2"]
-    dense_relu = relu.(dense_1)
-    dense_2 = (dense_relu * params["W3"]) .+ params["b3"]
-    result = softmax(dense_2)
 end
 
 function padding(input, num)
