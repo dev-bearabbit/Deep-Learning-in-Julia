@@ -1,3 +1,9 @@
+include("MNIST_data.jl")
+include("functions.jl")
+include("layers.jl")
+include("making_network.jl")
+include("optimizers.jl")
+
 # 로스값용 함수 (레이어 설정 필요)
 function  predict(input)
     
