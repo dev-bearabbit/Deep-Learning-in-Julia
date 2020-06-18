@@ -15,7 +15,7 @@ function making_network(W, b, weight_size, input_size, weight_init)
                 params[W[i]] = ((1.0 / prod(input_size))^(1/2)) * randn(Float64, weight_size[i])
                 params[b[i]] = zeros(Float32,1, weight_size[i][end])
             else
-                params[W[i]] = ((1.0 / (prod(weight_size[i-1])+weight_size[i-1][end]))^(1/2)) * randn(Float64, weight_size[i])
+                params[W[i]] = ((1.0 / (prod(weight_size[i-1][1:2])* weight_size[i-1][end]))^(1/2)) * randn(Float64, weight_size[i])
                 params[b[i]] = zeros(Float32,1, weight_size[i][end])
             end
         end
@@ -27,7 +27,7 @@ function making_network(W, b, weight_size, input_size, weight_init)
                 params[W[i]] = ((2.0 / prod(input_size))^(1/2)) * randn(Float64, weight_size[i])
                 params[b[i]] = zeros(Float32,1, weight_size[i][end])
             else
-                params[W[i]] = ((2.0 / (prod(weight_size[i-1])+ weight_size[i-1][end]))^(1/2)) * randn(Float64, weight_size[i])
+                params[W[i]] = ((2.0 / (prod(weight_size[i-1][1:2])* weight_size[i-1][end]))^(1/2)) * randn(Float64, weight_size[i])
                 params[b[i]] = zeros(Float32,1, weight_size[i][end])
             end
         end
