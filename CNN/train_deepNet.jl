@@ -1,3 +1,9 @@
+include("MNIST_data.jl")
+include("functions.jl")
+include("layers.jl")
+include("making_network.jl")
+include("optimizers.jl")
+
 # 손실함수 위한 예측 레이어
 function  predict(input)
     
