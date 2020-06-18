@@ -80,8 +80,6 @@ function convolution2D_forward(dense ,input, filter, bias, stride, pad)
     return result
 end
 
-# 사이즈 확인해보기
-
 function convolution2D_backward(dense ,input, stride, pad)
 
     input_r, input_c,input_d,input_num = size(dense.x)
