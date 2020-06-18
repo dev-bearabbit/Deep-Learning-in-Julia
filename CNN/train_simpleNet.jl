@@ -18,13 +18,13 @@ weight_size = [(5,5,1,30),(4320,100),(100,10)];
 
 params = making_network(W, b, weight_size, (28,28,1,100),"std");
 
-# predict용 파라미터(사용x)
+# predict용 저장소(사용x)
 pre_dense = dense_layer(0,0,0,0,0,0)
 pre_pool= repository(0,0,0)
 pre_flatten = repository(0,0,0)
 
 
-# 실제 파라미터
+# 실제 저장소
 result = SoftmaxwithLoss(0,0)
 dense1 = dense_layer(0,0,0,0,0,0)
 dense2 = dense_layer(0,0,0,0,0,0)
