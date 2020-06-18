@@ -1,3 +1,24 @@
+# 구조체 정의
+mutable struct dense_layer
+    x
+    w
+    col
+    col_w
+    dw
+    db
+end
+
+mutable struct repository
+    x
+    count
+    mask
+end
+
+mutable struct SoftmaxwithLoss
+    y
+    t
+end
+
 function Maxpooling_forward(pool, input, pool_h, pool_w, stride, pad)
     
     input_r, input_c,input_d,input_num = size(input)
