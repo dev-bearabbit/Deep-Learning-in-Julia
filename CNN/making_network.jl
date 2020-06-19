@@ -1,3 +1,5 @@
+#TODO: making network Xavier, He 수정하기
+
 function making_network(W, b, weight_size, input_size, weight_init)
     
     params = Dict()
