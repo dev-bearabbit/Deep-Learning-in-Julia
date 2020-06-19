@@ -84,7 +84,6 @@ function conv2D_forward_batch(dense,input, W, b, stride)
     total = zeros(num,num,filter_num,input_num)
     dense.w = W
     dense.x = input
-    dense.b = b
     
     if (((input_r-filter_r) * (1/stride))+1) % 1 != 0
         print("error")
