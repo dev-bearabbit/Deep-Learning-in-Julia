@@ -11,14 +11,14 @@ function making_network(W, b, weight_size, weight_init)
         
     elseif weight_init == "Xavier"
         for i in (1:length(W))
-            params[W[i]] = ((1.0 / (prod(weight_size[i][1:end-1]))^(1/2))) * randn(Float64, weight_size[i])
+            params[W[i]] = ((1.0 / prod(weight_size[i][1:end-1]))^(1/2)) * randn(Float64, weight_size[i])
             params[b[i]] = zeros(Float32,1, weight_size[i][end])
         end
         return(params)
         
     elseif weight_init == "He"
         for i in (1:length(W))
-            params[W[i]] = ((2.0 / (prod(weight_size[i][1:end-1]))^(1/2))) * randn(Float64, weight_size[i])
+            params[W[i]] = ((2.0 / prod(weight_size[i][1:end-1]))^(1/2)) * randn(Float64, weight_size[i])
             params[b[i]] = zeros(Float32,1, weight_size[i][end])
         end
         return(params)
