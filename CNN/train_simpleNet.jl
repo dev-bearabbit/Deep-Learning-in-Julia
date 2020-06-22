@@ -47,6 +47,7 @@ grads = Dict()
 train_loss_list= []
 
 # 학습 모델 (simpleNet)
+# batch_size = 100 / 1_epoch = 600
 @time begin
     for i in 1:600
     
