@@ -19,6 +19,13 @@ mutable struct SoftmaxwithLoss
     t
 end
 
+function predict(x)
+    a1 = (x * params["W1"]) .+ params["b1"]
+    z1 = sigmoid.(a1)
+    a2 = (z1 * params["W2"]) .+ params["b2"]
+    return softmax(a2)
+end
+
 function loss(x, t)
     y = predict(x)
     return cross_entropy_error(y, t)
