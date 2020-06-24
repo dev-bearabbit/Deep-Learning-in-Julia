@@ -1,3 +1,5 @@
+include("MNIST_data")
+
 ##### 네트워크 및 초기 매개 변수 설정 #####
 
 params = Dict()
