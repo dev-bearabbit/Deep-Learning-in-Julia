@@ -1,3 +1,5 @@
+include("MNIST_data.jl")
+include("functions.jl")
 
 ##### 네트워크 및 초기 매개 변수 설정 ##### 
 
