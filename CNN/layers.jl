@@ -115,7 +115,6 @@ function convolution2D_backward(dense ,input, stride, pad)
 
     # 1324 순서
     dcol = dout * Array(dense.col_w')
-    dcol = Array(dcol');
     dx = col2im(dense, dcol, filter_r, filter_c, stride, pad)
     
     return dx
