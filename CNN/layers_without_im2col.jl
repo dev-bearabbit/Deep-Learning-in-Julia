@@ -1,3 +1,24 @@
+# 구조체 정의
+mutable struct dense_layer
+    x
+    w
+    col
+    col_w
+    dw
+    db
+end
+
+mutable struct repository
+    x
+    count
+    mask
+end
+
+mutable struct SoftmaxwithLoss
+    y
+    t
+end
+
 # convolution layers
 
 function conv_2d_forward(input, filter, stride)
