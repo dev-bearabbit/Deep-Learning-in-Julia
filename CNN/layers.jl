@@ -177,7 +177,7 @@ end
 
 function flatten_backward_batch(re, input)
     
-    input_num, input_total = size(input)
+    input_num = size(input)
     out = zeros(re.mask)
     
     for k in 1:input_num
