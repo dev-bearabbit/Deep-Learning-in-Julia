@@ -25,4 +25,3 @@ function making_network(W, b, weight_size, output_shape, weight_init)
     end
     return(params)
 end
-end
