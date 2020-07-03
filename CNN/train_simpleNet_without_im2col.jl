@@ -21,8 +21,9 @@ end
 W =["W1","W2","W3"]
 b = ["b1","b2","b3"]
 weight_size = [(5,5,1,30),(4320,100),(100,10)];
+output_shape = [(28,28,1),(12,12,30),(100,100)];
 
-params = making_network(W, b, weight_size, (28,28,1,100),"std");
+params = making_network(W, b, weight_size, output_shape,"std");
 
 # predict() 파라미터 맞추기 위한 저장소 설정
 pre_dense = dense_layer(0,0,0,0,0,0)
