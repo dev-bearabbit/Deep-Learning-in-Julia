@@ -29,9 +29,9 @@ end
 W =["W1","W2","W3","W4","W5"]
 b = ["b1","b2","b3","b4","b5"]
 weight_size = [(3,3,1,32),(3,3,32,64),(3,3,64,64),(576,64),(64,10)];
-input_size = (28,28,1)
+output_shape = [(28,28,1),(13,13,32),(5,5,64),(100,576),(100,64)]
 
-params = making_network(W, b, weight_size,input_size,"He");
+params = making_network(W, b, weight_size,output_shape,"He");
 
 # predict용 저장소(사용x)
 pre_dense = dense_layer(0,0,0,0,0,0)
