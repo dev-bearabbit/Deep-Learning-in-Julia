@@ -58,7 +58,7 @@ flatten1 = repository(0,0,0)
 grads = Dict()
 train_loss_list= []
 
-## 학습 모델 (DeepNet)
+## 학습 모델 (convNet)
 # batch_size = 100 / 1_epoch = 600
 
 @time begin
