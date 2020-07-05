@@ -33,9 +33,8 @@ function Maxpooling_forward(pool, input, pool_h, pool_w, stride, pad)
     count = []
     
     for i in 1:size(order)[3]
-    
-    temp = reshape(Array(order[:,:,i]'),1,:)
-    append!(count, temp)
+        temp = reshape(Array(order[:,:,i]'),1,:)
+        append!(count, temp)
     end
     
     for i in 1:size(col_ex)[2]
