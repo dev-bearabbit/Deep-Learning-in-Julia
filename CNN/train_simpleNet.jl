@@ -21,7 +21,7 @@ end
 W =["W1","W2","W3"]
 b = ["b1","b2","b3"]
 weight_size = [(5,5,1,30),(4320,100),(100,10)];
-output_shape = [(28,28,1),(24,24,30),(100,100)]
+output_shape = [(28,28,1),(24,24,30),(1,100)]
 
 params = making_network(W, b, weight_size,output_shape,"std");
 
