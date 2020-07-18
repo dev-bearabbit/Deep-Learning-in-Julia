@@ -17,7 +17,7 @@ function making_one_hot_label(x, y)
 end
 
 function making_one_hot_labels(y_train)
-    t = making_one_hot_label.(y_train, 100)
+    t = making_one_hot_label.(y_train, 10)
     return (reduce(vcat, t))
 end
 
