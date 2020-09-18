@@ -1,12 +1,12 @@
 ## 딥러닝 100% 이해하기 프로젝트<br/>(A project for 100% understanding Deep Learning with Julia)
 
-해당 프로젝트는 오로지 줄리아(Julia)만을 사용하여 딥러닝 모델을 구현합니다.
+해당 프로젝트는 오로지 줄리아(Julia)만을 사용하여 딥러닝 모델을 구현합니다.  
 This project uses only Julia language to implement deep learning model.
 
-교육용으로 제작된 것이기에 딥러닝 원리에 대해 공부하실 분들에게 추천합니다.
+교육용으로 제작된 것이기에 딥러닝 원리에 대해 공부하실 분들에게 추천합니다.  
 It's designed for education, so I recommend for those who want to study the principles of deep learning.
 
-이 프로젝트에서 사용된 코드들은 아래의 저서를 참고하였습니다.
+이 프로젝트에서 사용된 코드들은 아래의 저서를 참고하였습니다.  
 I refered to the book below.
 
 [밑바닥부터 시작하는 딥러닝](https://www.hanbit.co.kr/store/books/look.php?p_code=B8475831198)
