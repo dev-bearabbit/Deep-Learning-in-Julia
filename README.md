@@ -1,4 +1,4 @@
-## 줄리아를 통해 딥러닝 100% 이해하기 프로젝트<br/>(A project for 100% understanding Deep Learning with Julia)
+## 줄리아를 통해 딥러닝 100% 이해하기 프로젝트<br/>(A project for 100% understanding Deep Learning in Julia)
 
 해당 프로젝트는 오로지 줄리아(Julia)만을 사용하여 딥러닝 모델을 구현합니다.  
 This project uses only Julia language to implement deep learning model.
@@ -10,6 +10,11 @@ It's designed for education, so I recommend for those who want to study the prin
 I refered to the book below.
 
 [밑바닥부터 시작하는 딥러닝](https://www.hanbit.co.kr/store/books/look.php?p_code=B8475831198)
+
+제 블로그의 [Deep Learning in Julia](https://hyeonji-ryu.github.io/categories/Deep-learning-in-Julia/)카테고리에 구현 과정이 업로드되어 있습니다.
+I uploaded some posts about the process to implement Deep learning on my blog, but they are written only Korean.
+
+p.s. 줄리아에 대해서 더 알고 싶다면, 제 블로그에 번역해둔 [Think Julia](https://hyeonji-ryu.github.io/categories/Think-Julia/)을 통해 공부하실 수 있습니다.
 
 ### 프로젝트 목표 (The project's goal)
 
