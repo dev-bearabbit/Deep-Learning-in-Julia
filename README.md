@@ -11,7 +11,7 @@ I refered to the book below.
 
 [밑바닥부터 시작하는 딥러닝](https://www.hanbit.co.kr/store/books/look.php?p_code=B8475831198)
 
-제 블로그의 [Deep Learning in Julia](https://hyeonji-ryu.github.io/categories/Deep-learning-in-Julia/)카테고리에 구현 과정이 업로드되어 있습니다.
+제 블로그의 [Deep Learning in Julia](https://hyeonji-ryu.github.io/categories/Deep-learning-in-Julia/)카테고리에 구현 과정이 업로드되어 있습니다.  
 I uploaded some posts about the process to implement Deep learning on my blog, but they are written only Korean.
 
 p.s. 줄리아에 대해서 더 알고 싶다면, 제 블로그에 번역해둔 [Think Julia](https://hyeonji-ryu.github.io/categories/Think-Julia/)을 통해 공부하실 수 있습니다.
