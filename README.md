@@ -28,4 +28,3 @@ p.s. 줄리아에 대해서 더 알고 싶다면, 제 블로그에 번역해둔 
   you can make and train model using your own code.
 
 ### 코드 맛보기 (A sneak peek of the project)
-
