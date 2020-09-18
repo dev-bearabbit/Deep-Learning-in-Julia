@@ -1,4 +1,4 @@
-## 딥러닝 100% 이해하기 프로젝트<br/>(A project for 100% understanding Deep Learning with Julia)
+## 줄리아를 통해 딥러닝 100% 이해하기 프로젝트<br/>(A project for 100% understanding Deep Learning with Julia)
 
 해당 프로젝트는 오로지 줄리아(Julia)만을 사용하여 딥러닝 모델을 구현합니다.  
 This project uses only Julia language to implement deep learning model.
