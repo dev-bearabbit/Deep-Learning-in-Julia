@@ -9,7 +9,7 @@ It's designed for education, so I recommend for those who want to study the prin
 이 프로젝트에서 사용된 코드들은 아래의 저서를 참고하였습니다.  
 I refered to the book below.
 
-[밑바닥부터 시작하는 딥러닝](https://www.hanbit.co.kr/store/books/look.php?p_code=B8475831198)
+- [밑바닥부터 시작하는 딥러닝](https://www.hanbit.co.kr/store/books/look.php?p_code=B8475831198)
 
 제 블로그의 [Deep Learning in Julia](https://hyeonji-ryu.github.io/categories/Deep-learning-in-Julia/) 카테고리에 구현 과정이 업로드되어 있습니다.  
 I uploaded some posts about the project's process on my blog, but they are written only Korean.
