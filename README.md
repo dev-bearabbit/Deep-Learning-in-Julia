@@ -1,3 +1,3 @@
-# Julia란
+## Julia란
 
 Julia는 
