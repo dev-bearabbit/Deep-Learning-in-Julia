@@ -28,3 +28,18 @@ P.S. 줄리아의 사용법이 궁금하다면, 제 블로그에 번역해둔 [T
   you can make and train model using your own code.
 
 ### 코드 맛보기 (A sneak peek of the project)
+
+간단하게 손글씨 숫자를 맞추는 분류 모델을 만들어보겠습니다.   
+Let's start making model that classify handwritten digits.
+
+먼저, 프로젝트의 전체 코드를 다운받습니다.  
+First, download the entire code in this project.
+
+프로젝트 상단에서 직접 다운받을 수도 있고, git을 사용하신다면 아래의 코드를 입력해서 다운받을 수도 있습니다.  
+you can download it derectly from top of this page, or you can clone it using git.
+
+```bash
+$ git clone https://github.com/Hyeonji-Ryu/Deep_Learning_in_Julia.git
+```
+
+
