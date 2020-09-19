@@ -42,4 +42,8 @@ you can download it derectly from top of this page, or you can clone it using gi
 $ git clone https://github.com/Hyeonji-Ryu/Deep_Learning_in_Julia.git
 ```
 
+그 다음, CNN 폴더로 디렉토리 경로를 설정합니다.
+Next, set a directory path to CNN folder.
+
+
 
