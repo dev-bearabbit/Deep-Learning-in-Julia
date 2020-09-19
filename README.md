@@ -48,6 +48,8 @@ $ git clone https://github.com/Hyeonji-Ryu/Deep_Learning_in_Julia.git
 ```bash
 $ cd <your path>/Deep_Learning_in_Julia/CNN
 ```
-3. 해당 커맨드라인에서 `Julia`를 입력합니다.  
-3. 
+3. 줄리아 REPL를 열기 위해 해당 커맨드라인에서 `Julia`를 입력합니다.  
+3. enter Julia in command line to open Julia REPL.
+
+4. 마지막으로 
 
