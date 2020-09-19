@@ -33,7 +33,7 @@ P.S. 줄리아의 사용법이 궁금하다면, 제 블로그에 번역해둔 [T
 Let's start making model that classify handwritten digits.
 
 **1. 프로젝트의 전체 코드를 다운받습니다.**  
-1. download the entire code in this project.  
+1. download the entire code in this project.
 
 프로젝트 상단에서 직접 다운받을 수도 있고, git을 사용하신다면 아래의 코드를 입력해서 다운받을 수도 있습니다.  
 you can download it derectly from top of this page, or you can clone it using git.
