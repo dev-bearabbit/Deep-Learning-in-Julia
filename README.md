@@ -32,7 +32,7 @@ P.S. 줄리아의 사용법이 궁금하다면, 제 블로그에 번역해둔 [T
 간단하게 손글씨 숫자를 맞추는 분류 모델을 만들어보겠습니다.   
 Let's start making model that classify handwritten digits.
 
-1. 프로젝트의 전체 코드를 다운받습니다.  
+**1. 프로젝트의 전체 코드를 다운받습니다.** 
 1. download the entire code in this project.
 
 프로젝트 상단에서 직접 다운받을 수도 있고, git을 사용하신다면 아래의 코드를 입력해서 다운받을 수도 있습니다.  
@@ -42,14 +42,15 @@ you can download it derectly from top of this page, or you can clone it using gi
 $ git clone https://github.com/Hyeonji-Ryu/Deep_Learning_in_Julia.git
 ```
 
-2. 커맨드라인에서 CNN 폴더로 디렉토리 경로를 설정합니다.  
+**2. 커맨드라인에서 CNN 폴더로 디렉토리 경로를 설정합니다.**  
 2. set a directory path to CNN folder in command line.
 
 ```bash
 $ cd <your path>/Deep_Learning_in_Julia/CNN
 ```
-3. 줄리아 REPL를 열기 위해 해당 커맨드라인에서 `Julia`를 입력합니다.  
+**3. 줄리아 REPL를 열기 위해 해당 커맨드라인에서 `Julia`를 입력합니다.**  
 3. enter Julia in command line to open Julia REPL.
 
-4. 마지막으로 
+**4. 마지막으로 아래의 코드를 입력합니다.**
+
 
