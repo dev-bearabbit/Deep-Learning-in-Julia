@@ -31,11 +31,10 @@ P.S. 줄리아의 사용법이 궁금하다면, 제 블로그에 번역해둔 [T
 
 간단하게 손글씨 숫자를 맞추는 분류 모델을 만들어보겠습니다.   
 Let's start making model that classify handwritten digits. 
+ 
+우리가 오늘 사용할 모델에 대한 정보는 아래와 같습니다.  
+Here is the information about model structure and train parameters.
 
->**NOTE**  
->우리가 오늘 사용할 모델에 대한 정보는 아래와 같습니다.  
->Here is the information about model structure and train parameters.
->
 >**- model structure**  
 >Conv(filter_num = 32, filter_size = 3, stride = 1, padding = 0) + ReLU  
 >Max_pool(filter size = 2, stride = 1, padding = 0)  
@@ -110,13 +109,22 @@ NO.600: 0.08915640203576712
 
 ### 훈련된 모델로 숫자 예측해보기 (predicting digit using trained model)
 
-모델이 제대로 훈련되었는지 확인해봅시다.
+모델이 제대로 훈련되었는지 확인해봅시다.  
 Let's check that the model is trained well.
 
-먼저, 훈련데이터 중 하나를 테스트 데이터로 지정합니다.
+먼저, 훈련데이터 중 하나를 테스트 데이터로 지정합니다.  
 First, assign one of train set to `test`.
 
 ```julia
 Julia> test = reshape(train_x[:,:,:,1],28,28,1,1)
 ```
-다음으로 아래
+다음으로 아래의 코드를 입력하여 예측 결과를 받습니다.  
+Next, enter the code below to get result of prediction.
+
+```Julia
+julia> result = argmax(predict(test))
+CartesianIndex(1, 6)
+```
+위 
+```ㄱ
+`
