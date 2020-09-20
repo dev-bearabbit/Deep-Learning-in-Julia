@@ -65,21 +65,21 @@ Here is the information about model and train parameters in `train_convNet` file
 
 - model structure
 
-Conv(filter_num = 32, filter_size = 3, stride = 1, padding = 0)
-ReLU
-Max_pool(filter size = 2, stride = 1, padding = 0)
+Conv(filter_num = 32, filter_size = 3, stride = 1, padding = 0)  
+ReLU  
+Max_pool(filter size = 2, stride = 1, padding = 0)  
 
 
-Conv(filter_num = 64, filter_size = 3, stride = 1, padding = 0)
-ReLU
-Max_pool(filter size = 2, stride = 1, padding = 0)
+Conv(filter_num = 64, filter_size = 3, stride = 1, padding = 0)  
+ReLU  
+Max_pool(filter size = 2, stride = 1, padding = 0)  
 
-Conv(filter_num = 64, filter_size = 3, stride = 1, padding = 0)
-ReLU
-Max_pool(filter size = 2, stride = 1, padding = 0)
+Conv(filter_num = 64, filter_size = 3, stride = 1, padding = 0)  
+ReLU  
+Max_pool(filter size = 2, stride = 1, padding = 0)  
 
-Flatten
-Dense(node_num = 64)
-Relu
-Dense(node_num = 10)
-softmax
+Flatten  
+Dense(node_num = 64)  
+Relu  
+Dense(node_num = 10)  
+softmax  
