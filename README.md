@@ -32,36 +32,9 @@ P.S. 줄리아의 사용법이 궁금하다면, 제 블로그에 번역해둔 [T
 간단하게 손글씨 숫자를 맞추는 분류 모델을 만들어보겠습니다.   
 Let's start making model that classify handwritten digits. 
 
-**1. 프로젝트의 전체 코드를 다운받습니다.**  
-1.download the entire code in this project. 
-
-프로젝트 상단에서 직접 다운받을 수도 있고, git을 사용하신다면 아래의 코드를 입력해서 다운받을 수도 있습니다.  
-you can download it derectly from top of this page, or you can clone it using git. 
-
-```bash
-$ git clone https://github.com/Hyeonji-Ryu/Deep_Learning_in_Julia.git
-```
-
-**2. 커맨드라인에서 CNN 폴더로 디렉토리 경로를 설정합니다.**  
-2.set a directory path to CNN folder in command line.
-
-```bash
-$ cd <your path>/Deep_Learning_in_Julia/CNN
-```
-
-**3. 줄리아 REPL를 열기 위해 해당 커맨드라인에서 `Julia`를 입력합니다.**  
-3.enter Julia in command line to open Julia REPL.
-
-**4.마지막으로 아래의 코드를 입력합니다.**  
-4.enter the code below.
-
-```Julia
-Julia> include("train_convNet.jl")
-```
-
 >**NOTE**  
->`train_convNet`에서 사용되는 모델 구조와 학습 정보는 아래와 같습니다.  
->Here is the information about model structure and train parameters in `train_convNet` file.
+>우리가 오늘 사용할 모델에 대한 정보는 아래와 같습니다.
+>Here is the information about model structure and train parameters.
 >
 >**- model structure**  
 >Conv(filter_num = 32, filter_size = 3, stride = 1, padding = 0)  
@@ -83,10 +56,37 @@ Julia> include("train_convNet.jl")
 >weight initializer = He   
 >optimizer = Adam  
 >batch size = 100  
->epochs = 1  
+>epochs = 1 
 
-**5. 아래와 같이 로스값이 프린트 되고, 훈련이 끝나고 
+**1. 프로젝트의 전체 코드를 다운받습니다.**  
+1.download the entire code in this project. 
 
+프로젝트 상단에서 직접 다운받을 수도 있고, git을 사용하신다면 아래의 코드를 입력해서 다운받을 수도 있습니다.  
+you can download it derectly from top of this page, or you can clone it using git. 
+
+```bash
+$ git clone https://github.com/Hyeonji-Ryu/Deep_Learning_in_Julia.git
+```
+
+**2. 커맨드라인에서 CNN 폴더로 디렉토리 경로를 설정합니다.**  
+2.set a directory path to CNN folder in command line.
+
+```bash
+$ cd <your path>/Deep_Learning_in_Julia/CNN
+```
+
+**3. 줄리아 REPL를 열기 위해 해당 커맨드라인에서 `Julia`를 입력합니다.**  
+3.enter `Julia` in command line to open Julia REPL.
+
+**4.마지막으로 아래의 코드를 입력합니다.**  
+4.enter the code below.
+
+```Julia
+Julia> include("train_convNet.jl")
+``` 
+
+**5. 아래와 같이 로스값을 바로 확인할 수 있습니다.**  
+5.you can see loss values in real time.
 
 ```Julia
 NO.1: 2.2886466121074425
