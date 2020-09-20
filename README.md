@@ -79,7 +79,7 @@ Julia> include("train_convNet.jl")
 >Dense(node_num = 10)  
 >softmax 
 >
->>**-train parameters**  
+>**-train parameters**  
 >weight initializer = He   
 >optimizer = Adam  
 >batch size = 100  
