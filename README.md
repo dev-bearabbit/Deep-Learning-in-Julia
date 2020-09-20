@@ -63,6 +63,23 @@ Julia> include("train_convNet.jl")
 `train_convNet`에서 사용되는 모델과 학습 정보는 아래와 같습니다.  
 Here is the information about model and train parameters in `train_convNet` file.
 
-- model structure    
-: Conv -> ReLU -> Max_pool -> Conv -> ReLU -> Max_pool -> Conv -> Relu -> Flatten -> Dense -> Relu -> Dense -> softmax
+- model structure
 
+Conv(filter_num = 32, filter_size = 3, stride = 1, padding = 0)
+ReLU
+Max_pool(filter size = 2, stride = 1, padding = 0)
+
+
+Conv(filter_num = 64, filter_size = 3, stride = 1, padding = 0)
+ReLU
+Max_pool(filter size = 2, stride = 1, padding = 0)
+
+Conv(filter_num = 64, filter_size = 3, stride = 1, padding = 0)
+ReLU
+Max_pool(filter size = 2, stride = 1, padding = 0)
+
+Flatten
+Dense(node_num = 64)
+Relu
+Dense(node_num = 10)
+softmax
