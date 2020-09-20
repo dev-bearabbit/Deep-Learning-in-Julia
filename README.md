@@ -1,4 +1,4 @@
-## 줄리아를 통해 딥러닝 100% 이해하기 프로젝트<br/>(A project for 100% understanding Deep Learning in Julia)
+# 줄리아를 통해 딥러닝 100% 이해하기 프로젝트<br/>(A project for 100% understanding Deep Learning in Julia)
 
 해당 프로젝트는 오로지 줄리아(Julia)만을 사용하여 딥러닝 모델을 구현합니다.  
 This project uses only Julia language to implement deep learning model.
@@ -16,7 +16,7 @@ I uploaded some posts about the project's process on my blog, but they are writt
 
 P.S. 줄리아의 사용법이 궁금하다면, 제 블로그에 번역해둔 [Think Julia](https://hyeonji-ryu.github.io/categories/Think-Julia/)을 통해 공부하실 수 있습니다.
 
-### 프로젝트 목표 (The project's goal)
+## 프로젝트 목표 (The project's goal)
 
 - 줄리아의 사용법을 배운다.  
   you can learn how to use Julia language
@@ -27,7 +27,7 @@ P.S. 줄리아의 사용법이 궁금하다면, 제 블로그에 번역해둔 [T
 - 만든 코드로 모델을 만들고 학습해본다.  
   you can make and train model using your own code.
 
-### 코드 맛보기 (A sneak peek of the project)
+## 코드 맛보기 (A sneak peek of the project)
 
 간단하게 손글씨 숫자를 맞추는 분류 모델을 만들어보겠습니다.   
 Let's start making model that classify handwritten digits. 
@@ -53,7 +53,7 @@ Let's start making model that classify handwritten digits.
 >batch size = 100  
 >epochs = 1 
 
-#### 모델 훈련하기 (training the model)
+### 모델 훈련하기 (training the model)
 
 **1. 프로젝트의 전체 코드를 다운받습니다.**  
 1.download the entire code in this project. 
@@ -108,7 +108,7 @@ NO.600: 0.08915640203576712
 98.08
 ```
 
-#### 훈련된 모델로 숫자 예측해보기 (predicting digit using trained model)
+### 훈련된 모델로 숫자 예측해보기 (predicting digit using trained model)
 
 모델이 제대로 훈련되었는지 확인해봅시다.
 Let's check that the model is trained well.
