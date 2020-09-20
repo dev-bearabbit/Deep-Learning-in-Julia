@@ -22,7 +22,7 @@ P.S. 줄리아의 사용법이 궁금하다면, 제 블로그에 번역해둔 [T
   you can learn how to use Julia language
   
 - 딥러닝의 작동방식을 완전히 이해한다.  
-  you can totally understand deep Learning's process.
+  you can totally understand deep learning's process.
   
 - 만든 코드로 모델을 만들고 학습해본다.  
   you can make and train model using your own code.
