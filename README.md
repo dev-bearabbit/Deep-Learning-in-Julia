@@ -33,7 +33,7 @@ P.S. 줄리아의 사용법이 궁금하다면, 제 블로그에 번역해둔 [T
 Let's start making model that classify handwritten digits. 
 
 >**NOTE**  
->우리가 오늘 사용할 모델에 대한 정보는 아래와 같습니다.
+>우리가 오늘 사용할 모델에 대한 정보는 아래와 같습니다.  
 >Here is the information about model structure and train parameters.
 >
 >**- model structure**  
