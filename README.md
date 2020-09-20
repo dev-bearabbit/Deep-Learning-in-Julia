@@ -112,7 +112,7 @@ NO.600: 0.08915640203576712
 모델이 제대로 훈련되었는지 확인해봅시다.  
 Let's check that the model is trained well.
 
-먼저, 훈련데이터 중 하나를 테스트 데이터로 지정합니다.  
+먼저, 훈련데이터 중 하나를 `test`로 할당합니다.  
 First, assign one of train set to `test`.
 
 ```julia
@@ -125,6 +125,3 @@ Next, enter the code below to get result of prediction.
 julia> result = argmax(predict(test))
 CartesianIndex(1, 6)
 ```
-위 
-```ㄱ
-`
