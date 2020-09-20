@@ -37,20 +37,15 @@ Let's start making model that classify handwritten digits.
 >Here is the information about model structure and train parameters.
 >
 >**- model structure**  
->Conv(filter_num = 32, filter_size = 3, stride = 1, padding = 0)  
->ReLU  
+>Conv(filter_num = 32, filter_size = 3, stride = 1, padding = 0) + ReLU  
 >Max_pool(filter size = 2, stride = 1, padding = 0)  
->Conv(filter_num = 64, filter_size = 3, stride = 1, padding = 0)  
->ReLU  
+>Conv(filter_num = 64, filter_size = 3, stride = 1, padding = 0) + ReLU  
 >Max_pool(filter size = 2, stride = 1, padding = 0)  
->Conv(filter_num = 64, filter_size = 3, stride = 1, padding = 0)  
->ReLU  
+>Conv(filter_num = 64, filter_size = 3, stride = 1, padding = 0) + ReLU  
 >Max_pool(filter size = 2, stride = 1, padding = 0)  
 >Flatten  
->Dense(node_num = 64)  
->Relu  
->Dense(node_num = 10)  
->softmax 
+>Dense(node_num = 64) + Relu  
+>Dense(node_num = 10) + softmax 
 >
 >**- train parameters**  
 >weight initializer = He   
