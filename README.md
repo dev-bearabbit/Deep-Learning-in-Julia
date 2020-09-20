@@ -53,6 +53,8 @@ Let's start making model that classify handwritten digits.
 >batch size = 100  
 >epochs = 1 
 
+### 모델 훈련하기 (training the model)
+
 **1. 프로젝트의 전체 코드를 다운받습니다.**  
 1.download the entire code in this project. 
 
@@ -99,3 +101,12 @@ NO.598: 0.013439008366053344
 NO.599: 0.1109573868949143
 NO.600: 0.08915640203576712
 ```
+**6. 훈련이 끝난 후, 자동으로 테스트한 결과를 보여줍니다.**
+6. you can see the accuracy of test set automatically.
+
+```Julia
+98.08
+```
+
+### 훈련된 모델로 숫자 예측해보기 (predicting digit using trained model)
+
