@@ -115,3 +115,11 @@ Next, enter the code below to get result of prediction.
 julia> result = argmax(predict(test))
 CartesianIndex(1, 6)
 ```
+모델은 `test`가 5라고 예측했습니다. 과연 5인지 확인해봅시다.  
+The model predicted that `test` is 5. Let's check it.
+```Julia
+Julia> train_y[1]
+5
+```
+모델이 정확히 예측했음을 확인할 수 있습니다.  
+You can see that the model predicted it correctly.
