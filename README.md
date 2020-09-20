@@ -113,7 +113,7 @@ Julia> test = reshape(train_x[:,:,:,1],28,28,1,1)
 Next, enter the code below to get result of prediction.
 ```Julia
 julia> result = argmax(predict(test))
-CartesianIndex(1, 6) #[0,1,2,3,4,**5**,6,7,8,9,10]
+CartesianIndex(1, 6) #[0,1,2,3,4,*5*,6,7,8,9,10]
 ```
 모델은 `test`가 5라고 예측했습니다. 과연 5인지 확인해봅시다.  
 The model predicted that `test` is 5. Let's check it.
