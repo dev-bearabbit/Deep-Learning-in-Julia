@@ -53,5 +53,3 @@ $ cd <your path>/Deep_Learning_in_Julia/CNN
 3. enter Julia in command line to open Julia REPL.
 
 **4.마지막으로 아래의 코드를 입력합니다.**
-
-
