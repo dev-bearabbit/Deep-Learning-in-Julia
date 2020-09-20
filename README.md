@@ -53,10 +53,10 @@ Let's start making model that classify handwritten digits.
 >batch size = 100  
 >epochs = 1 
 
-### 모델 훈련하기 (training the model)
+#### 모델 훈련하기 (training the model)
 
 **1. 프로젝트의 전체 코드를 다운받습니다.**  
-1. download the entire code in this project. 
+1.download the entire code in this project. 
 
 프로젝트 상단에서 직접 다운받을 수도 있고, git을 사용하신다면 아래의 코드를 입력해서 다운받을 수도 있습니다.  
 you can download it derectly from top of this page, or you can clone it using git. 
@@ -66,7 +66,7 @@ $ git clone https://github.com/Hyeonji-Ryu/Deep_Learning_in_Julia.git
 ```
 
 **2. 커맨드라인에서 CNN 폴더로 디렉토리 경로를 설정합니다.**  
-2. set a directory path to CNN folder in command line.
+2.set a directory path to CNN folder in command line.
 
 ```bash
 $ cd <your path>/Deep_Learning_in_Julia/CNN
@@ -76,14 +76,14 @@ $ cd <your path>/Deep_Learning_in_Julia/CNN
 3. enter `Julia` in command line to open Julia REPL.
 
 **4.마지막으로 아래의 코드를 입력합니다.**  
-4. enter the code below.
+4.enter the code below.
 
 ```Julia
 Julia> include("train_convNet.jl")
 ``` 
 
 **5. 아래와 같이 로스값을 바로 확인할 수 있습니다.**  
-5. you can see loss values in real time.
+5.you can see loss values in real time.
 
 ```Julia
 NO.1: 2.2886466121074425
@@ -102,11 +102,21 @@ NO.599: 0.1109573868949143
 NO.600: 0.08915640203576712
 ```
 **6. 훈련이 끝난 후, 자동으로 테스트한 결과를 보여줍니다.**  
-6. you can see the accuracy of test set automatically.
+6.you can see accuracy of test set automatically.
 
 ```Julia
 98.08
 ```
 
-### 훈련된 모델로 숫자 예측해보기 (predicting digit using trained model)
+#### 훈련된 모델로 숫자 예측해보기 (predicting digit using trained model)
 
+모델이 제대로 훈련되었는지 확인해봅시다.
+Let's check that the model is trained well.
+
+먼저, 훈련데이터 중 하나를 테스트 데이터로 지정합니다.
+First, assign one of train set to `test`.
+
+```julia
+Julia> test = reshape(train_x[:,:,:,1],28,28,1,1)
+```
+다음으로 아래
