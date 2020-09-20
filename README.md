@@ -52,7 +52,7 @@ $ cd <your path>/Deep_Learning_in_Julia/CNN
 **3. 줄리아 REPL를 열기 위해 해당 커맨드라인에서 `Julia`를 입력합니다.**  
 3.enter Julia in command line to open Julia REPL.
 
-**4.마지막으로 아래의 코드를 입력합니다.**
+**4.마지막으로 아래의 코드를 입력합니다.**  
 4.enter the code below.
 
 ```Julia
@@ -79,10 +79,28 @@ Julia> include("train_convNet.jl")
 >Dense(node_num = 10)  
 >softmax 
 >
->**-train parameters**  
+>**- train parameters**  
 >weight initializer = He   
 >optimizer = Adam  
 >batch size = 100  
 >epochs = 1  
 
+**5. 아래와 같이 로스값이 프린트 되고, 훈련이 끝나고 
 
+
+```Julia
+NO.1: 2.2886466121074425
+NO.2: 2.280258799992027
+NO.3: 2.2746683599835764
+NO.4: 2.2608282595650575
+NO.5: 2.243700243712272
+NO.6: 2.214588691106391
+.
+.
+NO.595: 0.10943427897500864
+NO.596: 0.12955831960259565
+NO.597: 0.03989749763491561
+NO.598: 0.013439008366053344
+NO.599: 0.1109573868949143
+NO.600: 0.08915640203576712
+```
