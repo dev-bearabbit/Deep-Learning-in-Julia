@@ -58,7 +58,7 @@ Here is the information about model structure and train parameters.
 1.download the entire code in this project. 
 
 프로젝트 상단에서 직접 다운받을 수도 있고, git을 사용하신다면 아래의 코드를 입력해서 다운받을 수도 있습니다.  
-you can download it derectly from top of this page, or you can clone it using git. 
+you can download it directly from top of this page, or you can clone it using git. 
 ```bash
 $ git clone https://github.com/Hyeonji-Ryu/Deep_Learning_in_Julia.git
 ```
