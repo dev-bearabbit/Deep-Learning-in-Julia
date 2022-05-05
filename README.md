@@ -11,10 +11,10 @@ I refered to the book below.
 
 - [밑바닥부터 시작하는 딥러닝](https://www.hanbit.co.kr/store/books/look.php?p_code=B8475831198)
 
-제 블로그의 [Deep Learning in Julia](https://hyeonji-ryu.github.io/categories/PROJECT/Deep-Learning-in-Julia/) 카테고리에 구현 과정이 업로드되어 있습니다.  
+제 블로그의 [Deep Learning in Julia](https://hyeonji-ryu.github.io/categories/ML-DL/DL-in-Julia/) 카테고리에 구현 과정이 업로드되어 있습니다.  
 I uploaded some posts about the project's process on my blog, but they are written only Korean.
 
-P.S. 줄리아의 사용법이 궁금하다면, 제 블로그에 번역해둔 [Think Julia](https://hyeonji-ryu.github.io/categories/PROJECT/Think-Julia/)을 통해 공부하실 수 있습니다.
+P.S. 줄리아의 사용법이 궁금하다면, 제 블로그에 번역해둔 [Think Julia](https://hyeonji-ryu.github.io/categories/LANGUAGE/Julia/)을 통해 공부하실 수 있습니다.
 
 ### 프로젝트 목표 (The project's goal)
 
